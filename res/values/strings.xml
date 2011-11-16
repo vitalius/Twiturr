@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Twiturr</string>
+
+  <string name="titleHelloWorld">Twiturr!</string>
+  <string name="titleStatus">Status Update</string>
+  <string name="titleTimeline">Timeline</string>
+
+  <string name="hintText">Please enter your 140-character status</string> 
+  <string name="buttonUpdate">Update</string>
+
+  <string name="titlePrefs">Preferences</string>
+  <string name="titlePurge">Clean Timeline</string>
+
+  <string name="titleUsername">Username</string>
+  <string name="summaryUsername">Used with Twitter</string>
+
+  <string name="titlePassword">Password</string>
+  <string name="summaryPassword">Twitter password</string>
+
+  <string name="titleApiRoot">API</string>
+  <string name="summaryApiRoot">API Root URL</string>
+
+  <string name="buttonAuth">Authenticate</string>
+
+  <string name="titleServiceStop">Stop Updates</string>
+  <string name="titleServiceStart">Start Updates</string>
+
+  <string name="msgSetupPrefs">Enter username and Authenticate</string>
+  <string name="msgAllDataPurged">Timeline is cleaned</string>
+
+  <string name="send_timeline_perm_label">Send Notifications</string>
+  <string name="send_timeline_perm_descr">Permission to send timeline update notifications</string>
+
+  <string name="receive_timeline_perm_label">Receive Notifications</string>
+  <string name="receive_timeline_perm_descr">Permission to receive timeline update notifications</string>
+</resources>

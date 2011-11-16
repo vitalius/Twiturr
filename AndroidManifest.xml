@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0"
+    package="com.twiturr">
+
+    <application 
+	android:name=".Twiturr"
+	android:label="@string/app_name" 
+	android:icon="@drawable/icon">
+
+        <activity android:name=".StatusActivity"
+                  android:label="@string/app_name">
+        </activity>
+	
+	<activity android:name="AuthActivity" >
+	    <intent-filter>
+	      <action android:name="android.intent.action.VIEW" />
+	      <category android:name="android.intent.category.BROWSABLE" />
+	      <category android:name="android.intent.category.DEFAULT" />
+	      <data android:scheme="twiturr" android:host="auth" />
+	    </intent-filter>
+	</activity>
+
+	<activity android:name=".TimelineActivity"
+		  android:label="@string/app_name">
+	    <intent-filter>
+	      <action android:name="android.intent.action.VIEW" />
+	      <action android:name="android.intent.action.MAIN" />
+	      <category android:name="android.intent.category.LAUNCHER" />
+	    </intent-filter>
+        </activity>
+	
+	<activity android:name=".PrefsActivity"
+		  android:label="@string/titlePrefs" />
+
+	<service android:name=".UpdaterService" />
+
+	<receiver android:name=".BootReceiver">
+	  <intent-filter>
+	    <action android:name="android.intent.action.BOOT_COMPLETED" />
+	  </intent-filter>
+	</receiver>
+
+	<receiver android:name=".NetworkReceiver">
+	  <intent-filter>
+	    <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+	  </intent-filter>
+	</receiver>
+
+    </application>
+
+
+    <!-- PERMISSIONS -->
+    <permission android:name="com.twiturr.SEND_TIMELINE_NOTIFICATIONS"
+		android:label="@string/send_timeline_perm_label"
+		android:description="@string/send_timeline_perm_descr"
+		android:permissionGroup="android.permission-group.PERSONAL_INFO"
+		android:protectionLevel="normal" />
+
+    <permission android:name="com.twiturr.RECEIVE_TIMELINE_NOTIFICATIONS"
+		android:label="@string/receive_timeline_perm_label"
+		android:description="@string/receive_timeline_perm_descr"
+		android:permissionGroup="android.permission-group.PERSONAL_INFO"
+		android:protectionLevel="normal" />
+
+
+    <uses-sdk android:minSdkVersion="7" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="com.twiturr.SEND_TIMELINE_NOTIFICATIONS" />
+    <uses-permission android:name="com.twiturr.RECEIVE_TIMELINE_NOTIFICATIONS" />
+
+</manifest>
