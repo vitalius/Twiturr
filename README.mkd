@@ -13,3 +13,5 @@ This is my fist attempt to write Android app.
 
 Twiturr is an extended version of a twitter client described throughout
 Learning Android by Marko Gargenta (O'REILLY 2011). This book provided a comprehensive coverage for beginning development on Android platform with plenty of bugs to hunt and to dive into Android documentation for.
+
+![](https://github.com/vitalius/Twiturr/raw/master/screen_shot.png)
