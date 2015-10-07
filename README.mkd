@@ -3,7 +3,7 @@ Android Twitter client
 
 Experimentation with Android SDK and Twitter's OAuth APIs
 
-Uses signpost-commonhttp library, we create a webview inside the app
-and allow user to authenticate with their twitter account.
+Using signpost-commonhttp library, we create a webview inside the app
+that allows user to authenticate with their twitter account via OAuth.
 
 ![](https://github.com/vitalius/Twiturr/raw/master/screen_shot.png)
