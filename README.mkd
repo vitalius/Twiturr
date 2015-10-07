@@ -1,12 +1,10 @@
-Twiturr 0.01
+Android Twitter client
 
-Experiment with Android SDK and Twitter's OAuth APIs
+============================
 
-Twiturr uses signpost-commonhttp library to create a webview inside the app
-and allows user to authenticate with their twitter account.
+Experimentation with Android SDK and Twitter's OAuth APIs
 
-OAuth provides authentication without the need of storing users password 
-on the device by means of getting temporary (expires in a very long time)
-consumer keys once the user is authenticated via twitters website.
+Uses signpost-commonhttp library, we create a webview inside the app
+and allow user to authenticate with their twitter account.
 
 ![](https://github.com/vitalius/Twiturr/raw/master/screen_shot.png)
