@@ -1,5 +1,4 @@
 Android Twitter client
-
 ============================
 
 Experimentation with Android SDK and Twitter's OAuth APIs
